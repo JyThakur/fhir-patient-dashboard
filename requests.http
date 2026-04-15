@@ -1,0 +1,37 @@
+### Create Patient
+POST http://localhost:8080/fhir/Patient
+Content-Type: application/fhir+json
+
+{
+    "resourceType": "Patient",
+    "id": "1",
+    "name": [
+        {
+            "family": "Thakur",
+            "given": ["Jay Bhanupratap"]
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1995-12-20"
+}
+
+### Get Patient
+GET http://localhost:8080/fhir/Patient?_id=1
+
+
+### Update Patient
+PUT http://localhost:8080/fhir/Patient/?name=Thakur
+Content-Type: application/fhir+json
+
+{
+    "resourceType": "Patient",
+    "id": "1",
+    "name": [
+        {
+            "given": ["Thakur"],
+            "family": ["Jay Bhanupratap"]
+        }
+    ],
+    "gender": "unknown",
+    "birthDate": "1995-12-21"
+}
