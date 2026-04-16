@@ -20,7 +20,7 @@ GET http://localhost:8080/fhir/Patient?_id=1
 
 
 ### Update Patient
-PUT http://localhost:8080/fhir/Patient/?name=Thakur
+PUT http://localhost:8080/fhir/Patient/?name=Thakur&_id=1103
 Content-Type: application/fhir+json
 
 {
@@ -34,4 +34,43 @@ Content-Type: application/fhir+json
     ],
     "gender": "unknown",
     "birthDate": "1995-12-21"
+}
+
+
+### Delete Patient
+DELETE http://localhost:8080/fhir/Patient?_id=1000
+
+### Batch Request for Deleting Multiple Patients
+POST http://localhost:8080/fhir
+Content-Type: application/fhir+json
+
+{
+    "resourceType": "Bundle",
+    "type": "batch",
+    "entry":[
+        {
+            "request": {
+                "method": "DELETE",
+                "url": "Patient/1051"
+            }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "url": "Patient/1101"
+            }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "url": "Patient/1102"
+             }
+        },
+        {
+            "request": {
+                "method": "DELETE",
+                "url": "Patient/1103"
+             }
+        }
+    ]
 }
