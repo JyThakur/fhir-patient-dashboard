@@ -104,15 +104,15 @@ http://localhost:3000
 
 ### Patient Dashboard (Multiple Patients)
 
-![Dashboard Main](screenshots/dashboard-main.png)
+![Dashboard Main](screenshot/dashboard-main.png)
 
 ### Dashboard After Update Operation
 
-![Dashboard After Delete](screenshots/dashboard-main-update.png)
+![Dashboard After Update](screenshot/dashboard-main-update.png)
 
 ### Dashboard After Delete Operation
 
-![Dashboard After Delete](screenshots/dashboard-main-delete.png)
+![Dashboard After Delete](screenshot/dashboard-main-delete.png)
 
 ---
 
@@ -120,19 +120,19 @@ http://localhost:3000
 
 ### Create Patient — HTTP 201 Created
 
-![Create Patient](screenshots/api-post-201.png)
+![Create Patient](screenshot/api-post-201.png)
 
 ### Get Patient — HTTP 200 OK
 
-![Get Patient](screenshots/api-get-200.png)
+![Get Patient](screenshot/api-get-200.png)
 
 ### Update Patient — HTTP 200 OK
 
-![Update Patient](screenshots/api-put-200.png)
+![Update Patient](screenshot/api-put-200.png)
 
 ### Delete Patient — HTTP 200 OK
 
-![Delete Patient](screenshots/api-delete-200.png)
+![Delete Patient](screenshot/api-delete-200.png)
 
 ---
 
